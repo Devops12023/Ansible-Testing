@@ -16,4 +16,4 @@ amis = {
   ap-southeast-1 = "ami-06b6e5225d1db5f46" # Canonical, Ubuntu, 20.04 LTS, amd64 focal image
 }
 projid    = "PHOENIX-123"
-imagename = "ami-0149b2da6ceec4bb0"
+imagename = "ami-0021b89e13de2b443"
