@@ -1,13 +1,13 @@
 data "aws_ami" "my_ami" {
   most_recent = true
-  name_regex  = "^DevSecOps"
-  owners      = ["211125710812"]
+ # name_regex  = "^DevSecOps"
+  owners      = ["2478669179532"]
 }
 
 
 resource "aws_instance" "webservers" {
   #count                       = local.new_environment == "production" ? 3 : 1
-  count                       = 3
+  count                       = 2
   ami                         = data.aws_ami.my_ami.id
   instance_type               = lookup(var.instance_type, local.new_environment)
   key_name                    = var.key_name
